@@ -1,62 +1,104 @@
-# 🚀 SpaceCrafter
+# SpaceCrafter
 
-**NASA Space Apps Challenge 2025 – Team Los Desorbitados (Área 42, Málaga, Spain)**
+[English version](./README.en.md)
+
+**NASA Space Apps Challenge 2025 - Team Los Desorbitados (Area 42, Malaga, Spain)**
 
 https://github.com/user-attachments/assets/ee8324f5-55c5-4410-a514-b2372a9cd68f
 
----
+## Sobre el proyecto
 
-## 🌌 About the Project
+SpaceCrafter es una plataforma web educativa para diseñar y evaluar hábitats espaciales modulares de forma visual e interactiva. El objetivo del proyecto es acercar los retos de la habitabilidad en el espacio a estudiantes y público general mediante una experiencia accesible, atractiva y apoyada en referencias reales de NASA y ESA.
 
-**SpaceCrafter** is an educational web platform to design and evaluate modular space habitats in a visual and interactive way.  
-It enables students and enthusiasts to explore the challenges of sustaining human life in space while experimenting with real NASA-based data.
+La aplicación permite:
 
-Users can:
-- Define the habitat’s **shape and size**.  
-- Place modules such as **life support, power, galley, crew quarters, exercise, docking, and science labs**.  
-- Use a **drag-and-drop visual editor** with instant feedback.  
-- Access **real mission modules** with technical specs (inspired by **ISS** designs and **NASA/ESA** data).  
-- Learn through **gamified education** with challenges, scoring, and AI guidance.
+- Definir la forma y el tamaño del hábitat.
+- Colocar módulos como soporte vital, energía, galley, descanso, ejercicio, esclusas, docking y laboratorios.
+- Diseñar con un editor visual drag and drop con retroalimentación inmediata.
+- Consultar módulos inspirados en arquitecturas espaciales reales.
+- Explorar una capa de aprendizaje gamificada con métricas, retos y guía contextual.
 
-🔗 **Live Demo:** https://nasa.manianetwork.es  
+Versión publicada durante la hackathon: https://nasa.manianetwork.es
 
----
+## Reto de la hackathon
 
-## 🎯 About the Challenge
+Proyecto desarrollado para la NASA Space Apps Challenge 2025 dentro del reto **Your Home in Space: The Habitat Layout Creator**, centrado en cómo diseñar entornos habitables que permitan sostener la vida humana en misiones espaciales.
 
-Built for the **NASA Space Apps Challenge 2025**, theme:  
-**“Your Home in Space: The Habitat Layout Creator”** (Exploration Systems Development Mission Directorate).
+Los hábitats espaciales deben resolver cuestiones como:
 
-Space habitats are “homes in space” that must support:
-- Waste management
-- Thermal control
-- Life support
-- Power generation
-- Food storage & preparation
-- Medical care
-- Sleep & exercise
-- Communications & operations
+- Gestión de residuos.
+- Control térmico.
+- Soporte vital.
+- Generación y distribución de energía.
+- Alimentación y almacenamiento.
+- Atención médica.
+- Descanso y ejercicio.
+- Comunicaciones y operaciones.
 
-Our goal is to make this complex challenge **accessible, fun, and educational** for younger generations.
+## Funcionalidades principales
 
----
+- Editor visual de módulos con drag and drop.
+- Sistema de puntuación en tiempo real para evaluar eficiencia, ergonomía y equilibrio general del diseño.
+- Asistente integrado con respuestas locales en esta versión publicada.
+- Módulos y referencias inspirados en misiones y documentación aeroespacial.
+- Vistas de comunidad, rankings, perfiles y propuestas.
+- Enfoque educativo con navegación visual y contenidos de aprendizaje.
 
-## ✨ Key Features
+## Estado del repositorio
 
-🖱️ **Drag & Drop Editor** – Intuitive placement and alignment of modules.  
-📊 **Real-time Scoring** – Evaluate efficiency, cost, ergonomics, sustainability, and mission fit.  
-🤖 **AI Assistant in the Creator** – Built-in chat that suggests modules, explains technical concepts, and helps iterate designs in real time.  
-🛰️ **Realistic Modules** – NASA/ESA-inspired components with simplified specs for learning.  
-🎮 **Gamification** – Achievements, themed challenges, and competition.  
-🌐 **Community Rankings** – Share habitats, receive community votes, and climb **leaderboards**.  
-👩‍🚀 **User Profiles** – Personal dashboards with your habitats, **achievements/badges**, and **stats** (design time, modules used, votes received).  
-📤 **Export & Share** – Save designs, export images, and share links with your class/team.
+Esta versión se ha preparado para dejar el proyecto publicable y reutilizable como portfolio:
 
----
+- No se incluyen claves de API, contraseñas ni datos de servidor.
+- Las variables sensibles deben definirse mediante `.env`.
+- Se incluye un esquema SQL de referencia en `database/schema.sql` para recrear la estructura de datos.
+- La aplicación ya no depende de la carpeta `public_html`; el proyecto queda organizado desde la raíz del repositorio.
 
-## 🖼️ Media
+## Tecnologías
 
-### 📸 Screenshots
+- Frontend: HTML, CSS y JavaScript.
+- Backend: PHP.
+- Base de datos original: MySQL.
+- Datos de referencia: documentación pública de NASA y ESA.
+
+## Estructura del proyecto
+
+- `app/`: utilidades de entorno, sesión y autenticación.
+- `assets/`: estilos, scripts, fuentes, vídeos e imágenes.
+- `includes/`: cabeceras, barras laterales y piezas de layout.
+- `modules/habitat/`: editor principal de hábitats y asistente.
+- `modules/dashboard/`: vistas de dashboard, comunidad, perfil, aprendizaje y presets.
+- `database/schema.sql`: estructura SQL de referencia.
+- `.env.example`: ejemplo de variables de entorno para desarrollo local.
+
+## Cómo ejecutarlo en local
+
+Requisitos:
+
+- PHP 8 o superior.
+
+Pasos:
+
+1. Copia `.env.example` a `.env` si quieres definir variables locales.
+2. Inicia un servidor web apuntando a la raíz del proyecto.
+3. Abre la aplicación en el navegador.
+
+Ejemplo con el servidor embebido de PHP:
+
+```powershell
+php -S localhost:8000
+```
+
+Después abre `http://localhost:8000`.
+
+Si prefieres Apache o Nginx, configura el virtual host para servir directamente esta carpeta como raíz pública.
+
+## Base de datos
+
+Se ha añadido `database/schema.sql` para conservar la estructura lógica del proyecto y facilitar su recuperación, consulta o adaptación en el futuro.
+
+## Material visual
+
+### Capturas
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0c9c16d3-e6ee-4868-80d6-1623241f0bed" width="250" />
@@ -79,50 +121,22 @@ Our goal is to make this complex challenge **accessible, fun, and educational** 
   <img src="https://github.com/user-attachments/assets/c783535e-a618-456c-8ba9-0c42883abc26" width="250" />
 </p>
 
----
+## Uso de IA y referencias
 
-## 🔬 Technical Details
+- Durante el desarrollo del proyecto se utilizaron herramientas de inteligencia artificial como apoyo para tareas de código, generación de partes concretas, asistencia técnica, materiales visuales y exploración de ideas.
+- La implementación, adaptación y ensamblado final del proyecto se realizó dentro del trabajo del equipo, usando la IA como herramienta de apoyo y no como sustitución completa del desarrollo.
+- La versión pública del repositorio no incluye claves privadas ni dependencias sensibles de servicios externos.
+- Referencia principal de NASA para espacios funcionales: [NASA NTRS PDF](https://ntrs.nasa.gov/api/citations/20200002973/downloads/20200002973.pdf).
 
-**Technologies Used**
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** PHP (database functions, logic, user management)  
-- **Database:** MySQL  
-- **AI Integration:** Gemini 2.5 API (chatbot assistant; also used for image/video generation experiments)
+## Equipo
 
-**Use of Artificial Intelligence (AI)**
-- **Images/Animations:** Generated with **Gemini 2.5** and **GPT-5**, watermarked with “AI-generated”.  
-- **Audio:** Demo narration produced with **Canva Pro** TTS.  
-- **Code:** AI used as a assistant for queries.
+Proyecto desarrollado por Los Desorbitados para la NASA Space Apps Challenge 2025.
 
-**NASA Data**
-- **Functional Spaces:** [PDF – NASA NTRS](https://ntrs.nasa.gov/api/citations/20200002973/downloads/20200002973.pdf) 
-- Additional references: ESA/NASA mission specifications and public documentation.
-
----
-
-## 🎓 Educational Impact
-
-- Makes aerospace systems **fun and accessible** through interactive design.  
-- Encourages **curiosity and STEM learning** for students.  
-- Gamified approach → **learn by doing**.  
-- Includes **mini-courses inside the platform** where users can follow step-by-step lessons.  
-- The **AI assistant** guides users through the courses, answering questions, solving curiosities, and acting as a modern mentor.  
-- Bridges **real technical data** with exploratory, visual learning.
-
----
-
-## 👨‍🚀 Team – Los Desorbitados (Área 42)
-
-| Name | GitHub |
+| Nombre | GitHub |
 |---|---|
-| **Marcos Barranquero Ramírez** | https://github.com/marcos03br |
-| **Raúl Casado Moreno** | https://github.com/racasado |
-| **Alba Marqués Reca** | https://github.com/albmarqu |
-| **Antonio Jesús Arévalo Urbano** | https://github.com/ajesusau |
-| **Javier Navarrete González** | https://github.com/javiernglz |
-| **Alejandro Ortiz Gonzalez** | https://github.com/aleortiz |
-
-📍 **Local Event:** 42, Málaga, Spain  
-🛰️ **Organization:** NASA Space Apps Challenge 2025
-
----
+| Marcos Barranquero Ramírez | https://github.com/MarcosBarranquero |
+| Raúl Casado Moreno | https://github.com/RaulCasado |
+| Alba Marqués Reca | https://github.com/AMarqs |
+| Antonio Jesús Arévalo Urbano | https://github.com/Ajesusau |
+| Javier Navarrete González | https://github.com/javiernglz |
+| Alejandro Ortiz Gonzalez | https://github.com/inhenowe |

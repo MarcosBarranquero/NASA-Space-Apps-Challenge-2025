@@ -1,0 +1,10 @@
+# Put this .htaccess next to index.php (root)
+RewriteEngine On
+
+# Let real files/dirs through (assets, uploads, etc)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Send everything else to index.php
+RewriteRule ^ index.php [L]
