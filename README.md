@@ -18,8 +18,6 @@ La aplicación permite:
 - Consultar módulos inspirados en arquitecturas espaciales reales.
 - Explorar una capa de aprendizaje gamificada con métricas, retos y guía contextual.
 
-Versión publicada durante la hackathon: https://nasa.manianetwork.es
-
 ## Reto de la hackathon
 
 Proyecto desarrollado para la NASA Space Apps Challenge 2025 dentro del reto **Your Home in Space: The Habitat Layout Creator**, centrado en cómo diseñar entornos habitables que permitan sostener la vida humana en misiones espaciales.

@@ -18,8 +18,6 @@ Users can:
 - Review simplified module references inspired by real mission architecture.
 - Explore a learning-focused experience with scoring, challenges, and guided context.
 
-Version published during the hackathon: https://nasa.manianetwork.es
-
 ## Hackathon context
 
 This project was created for the NASA Space Apps Challenge 2025, under the challenge **Your Home in Space: The Habitat Layout Creator**, focused on designing environments capable of sustaining human life in space missions.
