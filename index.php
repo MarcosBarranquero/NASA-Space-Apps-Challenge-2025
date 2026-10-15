@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__.'/app/base.php';
 require_once __DIR__.'/app/session.php';
 require_once __DIR__.'/app/env.php';
 require_once __DIR__.'/app/db.php';
@@ -44,6 +45,9 @@ $routes = [
 ];
 
 $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+// Si la app está en una subcarpeta (p. ej. /demos/spacecrafter), se quita antes de enrutar
+$basePath = base_path();
+if ($basePath !== '' && str_starts_with($path, $basePath)) $path = substr($path, strlen($basePath)) ?: '/';
 $seg  = array_values(array_filter(explode('/', trim($path, '/'))));
 
 // ✅ si no hay segmento, usa 'onepage'

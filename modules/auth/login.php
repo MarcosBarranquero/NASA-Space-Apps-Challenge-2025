@@ -1,4 +1,4 @@
-<?php
+<?php require_once __DIR__ . '/../../app/base.php';
 // modules/auth/login.php — login single-tenant (sin organizaciones)
 
 require_once __DIR__ . '/../../app/csrf.php';

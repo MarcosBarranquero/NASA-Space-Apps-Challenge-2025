@@ -90,6 +90,12 @@ Then open `http://localhost:8000`.
 
 If you prefer Apache or Nginx, point the virtual host directly to this folder as the public root.
 
+## Installing in a subfolder
+
+The app works both at the root of a domain and inside a folder (for example `https://example.com/demos/spacecrafter/`). It detects the folder it lives in and adjusts links, assets and the paths used by the JavaScript; nothing needs to be changed.
+
+Apache requirements: `mod_rewrite` enabled and the bundled `.htaccess` allowed. To force a specific folder, set the `APP_BASE` environment variable (for example `APP_BASE=/demos/spacecrafter`).
+
 ## Database
 
 A reference schema is included in `database/schema.sql` to preserve the original logical structure and make future recreation, review, or adaptation easier.

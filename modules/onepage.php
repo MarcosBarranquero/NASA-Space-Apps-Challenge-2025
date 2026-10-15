@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require_once __DIR__ . '/../app/base.php'; ?><!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">

@@ -75,7 +75,7 @@
 
     // Conectar con el backend real
     try {
-        const response = await fetch('/modules/habitat/asistente-ia.php', {
+        const response = await fetch((window.APP_BASE || '') + '/modules/habitat/asistente-ia.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

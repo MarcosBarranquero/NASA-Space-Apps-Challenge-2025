@@ -52,7 +52,7 @@ export const SIZES = {
 export const CREW_SIZE_FIXED = 6;
 
 // ===== Catálogo =====
-const IMG_BASE = '/modules/habitat/assets/img/';
+const IMG_BASE = (window.APP_BASE || '') + '/modules/habitat/assets/img/';
 
 export const MODULE_CATALOG = {
   // Primary

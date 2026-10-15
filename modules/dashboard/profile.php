@@ -1,4 +1,4 @@
-<?php
+<?php require_once __DIR__ . '/../../app/base.php';
 $page_title = "User Profile";
 $page_description = "Manage your profile, view your habitat designs, and track your contributions to the SpaceCrafter community";
 
@@ -552,7 +552,7 @@ include __DIR__.'/../../includes/topbar.php';
         <div class="block">
           <div class="block-content text-center">
             <div class="profile-avatar-container">
-              <img src="/modules/dashboard/assets/img/avatars/default.png" class="img-avatar" alt="Avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23FFD166%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%230A0B1E%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2240%22 font-weight=%22800%22%3EJS%3C/text%3E%3C/svg%3E'">
+              <img src="/assets/media/avatars/avatar10.jpg" class="img-avatar" alt="Avatar" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23FFD166%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%230A0B1E%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2240%22 font-weight=%22800%22%3EJS%3C/text%3E%3C/svg%3E'">
             </div>
             <h4 class="profile-username" id="profileUsername">SpaceArchitect</h4>
             <p class="profile-level">Level 8 • Space Architect</p>

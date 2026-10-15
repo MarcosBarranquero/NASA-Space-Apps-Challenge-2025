@@ -1,4 +1,4 @@
-<?php
+<?php require_once __DIR__ . '/../../app/base.php';
 // modules/auth/signup.php — Registro con diseño SpaceCrafter
 
 require_once __DIR__ . '/../../app/csrf.php';
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $res = auth_register($name, $email, $pass1);
 
       if ($res['ok']) {
-        header("Location: /dashboard");
+        header('Location: ' . url('/dashboard'));
         exit;
       } else {
         $error = $res['error'];

@@ -6,7 +6,7 @@ window.LEARN_ARTICLES = [
     category: 'Diseño',
     readTime: '5 min',
     difficulty: 'Principiante',
-    image: '/modules/dashboard/assets/img/articles/zonificacion.jpg',
+    image: (window.APP_BASE || '') + '/modules/dashboard/assets/img/articles/zonificacion.jpg',
     summary: 'Aprende a organizar espacios según funcionalidad y seguridad',
     content: `
       <h6 class="fw-bold mb-3">Introducción</h6>
@@ -20,7 +20,7 @@ window.LEARN_ARTICLES = [
     category: 'Configuración',
     readTime: '7 min',
     difficulty: 'Intermedio',
-    image: '/modules/dashboard/assets/img/articles/adyacencia.jpg',
+    image: (window.APP_BASE || '') + '/modules/dashboard/assets/img/articles/adyacencia.jpg',
     summary: 'Qué módulos deben estar juntos y cuáles separados',
     content: `<!-- Ver learn.php -->`
   },
@@ -30,7 +30,7 @@ window.LEARN_ARTICLES = [
     category: 'Planificación',
     readTime: '6 min',
     difficulty: 'Intermedio',
-    image: '/modules/dashboard/assets/img/articles/crew.jpg',
+    image: (window.APP_BASE || '') + '/modules/dashboard/assets/img/articles/crew.jpg',
     summary: 'Cálculo de recursos según número de tripulantes',
     content: `<!-- Ver learn.php -->`
   },
@@ -40,7 +40,7 @@ window.LEARN_ARTICLES = [
     category: 'Estándares',
     readTime: '10 min',
     difficulty: 'Avanzado',
-    image: '/modules/dashboard/assets/img/articles/nasa-esa.jpg',
+    image: (window.APP_BASE || '') + '/modules/dashboard/assets/img/articles/nasa-esa.jpg',
     summary: 'Estándares internacionales de diseño espacial',
     content: `<!-- Ver learn.php -->`
   },
@@ -50,7 +50,7 @@ window.LEARN_ARTICLES = [
     category: 'Sistemas',
     readTime: '8 min',
     difficulty: 'Avanzado',
-    image: '/modules/dashboard/assets/img/articles/thermal.jpg',
+    image: (window.APP_BASE || '') + '/modules/dashboard/assets/img/articles/thermal.jpg',
     summary: 'Gestión de temperatura en entornos extremos',
     content: `<p>El control térmico es crítico para la supervivencia...</p>`
   },
@@ -60,7 +60,7 @@ window.LEARN_ARTICLES = [
     category: 'Seguridad',
     readTime: '9 min',
     difficulty: 'Avanzado',
-    image: '/modules/dashboard/assets/img/articles/radiation.jpg',
+    image: (window.APP_BASE || '') + '/modules/dashboard/assets/img/articles/radiation.jpg',
     summary: 'Escudos y materiales para protección radiológica',
     content: `<p>La radiación espacial representa uno de los mayores desafíos...</p>`
   }

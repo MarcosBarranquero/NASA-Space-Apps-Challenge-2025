@@ -5,7 +5,7 @@ window.SEED_PRESETS = [
     title: 'Lunar Outpost',
     crew: 4,
     durationDays: 30,
-    thumb: '/modules/dashboard/assets/img/presets/lunar.png',
+    thumb: (window.APP_BASE || '') + '/modules/dashboard/assets/img/presets/lunar.png',
     description: 'Estación lunar compacta para misiones de corta duración. Optimizada para 4 tripulantes durante 30 días.',
     modules: ['vital', 'power', 'cabin', 'cabin', 'galley', 'lab', 'passage_h'],
     requirements: {
@@ -19,7 +19,7 @@ window.SEED_PRESETS = [
     title: 'Transit to Mars',
     crew: 6,
     durationDays: 180,
-    thumb: '/modules/dashboard/assets/img/presets/transit.png',
+    thumb: (window.APP_BASE || '') + '/modules/dashboard/assets/img/presets/transit.png',
     description: 'Hábitat de tránsito para viaje prolongado a Marte. Capacidad para 6 tripulantes durante 6 meses.',
     modules: ['vital', 'vital', 'power', 'cabin', 'cabin', 'cabin', 'galley', 'gym', 'lab', 'storage', 'passage_h', 'passage_v'],
     requirements: {
@@ -33,7 +33,7 @@ window.SEED_PRESETS = [
     title: 'Martian Surface',
     crew: 8,
     durationDays: 540,
-    thumb: '/modules/dashboard/assets/img/presets/mars.png',
+    thumb: (window.APP_BASE || '') + '/modules/dashboard/assets/img/presets/mars.png',
     description: 'Base marciana permanente para misiones de larga duración. Diseñada para 8 tripulantes durante 18 meses.',
     modules: ['vital', 'vital', 'power', 'power', 'cabin', 'cabin', 'cabin', 'cabin', 'galley', 'gym', 'lab', 'lab', 'greenhouse', 'storage', 'storage', 'dock', 'passage_h', 'passage_v'],
     requirements: {

@@ -1,4 +1,4 @@
-<?php /* /modules/habitat/demo.php */ ?>
+<?php require_once __DIR__ . '/../../app/base.php'; /* /modules/habitat/demo.php */ ?>
 <!doctype html>
 <html lang="es">
 <head>

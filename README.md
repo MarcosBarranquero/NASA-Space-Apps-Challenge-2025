@@ -90,6 +90,12 @@ Después abre `http://localhost:8000`.
 
 Si prefieres Apache o Nginx, configura el virtual host para servir directamente esta carpeta como raíz pública.
 
+## Instalar en una subcarpeta
+
+La aplicación funciona tanto en la raíz de un dominio como dentro de una carpeta (por ejemplo `https://ejemplo.com/demos/spacecrafter/`). Detecta sola la carpeta en la que está y ajusta los enlaces, los recursos y las rutas que usa el JavaScript; no hay que cambiar nada.
+
+Requisitos en Apache: `mod_rewrite` activo y que se permita el `.htaccess` incluido. Si se necesitara forzar la carpeta, se puede definir la variable de entorno `APP_BASE` (por ejemplo `APP_BASE=/demos/spacecrafter`).
+
 ## Base de datos
 
 Se ha añadido `database/schema.sql` para conservar la estructura lógica del proyecto y facilitar su recuperación, consulta o adaptación en el futuro.

@@ -4,7 +4,7 @@ window.SEED_USERS = {
     id: 'user-001',
     username: 'SpaceArchitect',
     email: 'architect@spacecrafter.app',
-    avatar: '/modules/dashboard/assets/img/avatars/default.png',
+    avatar: (window.APP_BASE || '') + '/assets/media/avatars/avatar10.jpg',
     bio: 'Designer of space habitats. Passionate about extraterrestrial architecture.',
     stats: {
       habitatsCreated: 5,
@@ -22,7 +22,7 @@ window.SEED_USERS = {
     {
       id: 'user-002',
       username: 'MarsColonist',
-      avatar: '/modules/dashboard/assets/img/avatars/user2.png',
+      avatar: (window.APP_BASE || '') + '/assets/media/avatars/avatar2.jpg',
       habitatId: 'HAB-COMM-001',
       habitatName: 'Red Planet Home',
       score: 4.8,
@@ -32,7 +32,7 @@ window.SEED_USERS = {
     {
       id: 'user-003',
       username: 'LunarEngineer',
-      avatar: '/modules/dashboard/assets/img/avatars/user3.png',
+      avatar: (window.APP_BASE || '') + '/assets/media/avatars/avatar3.jpg',
       habitatId: 'HAB-COMM-002',
       habitatName: 'Moonbase Alpha',
       score: 4.6,
@@ -42,7 +42,7 @@ window.SEED_USERS = {
     {
       id: 'user-004',
       username: 'OrbitDesigner',
-      avatar: '/modules/dashboard/assets/img/avatars/user4.png',
+      avatar: (window.APP_BASE || '') + '/assets/media/avatars/avatar4.jpg',
       habitatId: 'HAB-COMM-003',
       habitatName: 'ISS Next Gen',
       score: 4.5,

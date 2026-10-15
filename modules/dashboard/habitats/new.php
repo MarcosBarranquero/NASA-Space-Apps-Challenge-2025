@@ -1,4 +1,4 @@
-<?php
+<?php require_once __DIR__ . '/../../../app/base.php';
 include __DIR__.'/../../../includes/header.php';
 include __DIR__.'/../../../includes/sidebar-right.php';
 include __DIR__.'/../../../includes/sidebar-left.php';

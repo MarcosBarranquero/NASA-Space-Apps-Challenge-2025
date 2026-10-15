@@ -1,4 +1,4 @@
-<?php
+<?php require_once __DIR__ . '/../../app/base.php';
 $page_title = "Community Ranking";
 $page_description = "Explore and rank the best space habitat designs created by our global community of engineers and designers";
 

@@ -1,4 +1,4 @@
-<?php
+<?php require_once __DIR__ . '/../../app/base.php';
 session_start();
 
 // destruir todo lo de la sesión
@@ -13,5 +13,5 @@ if (ini_get("session.use_cookies")) {
 session_destroy();
 
 // redirigir a la página pública (ej. onepage o login)
-header("Location: /onepage");
+header('Location: ' . url('/onepage'));
 exit;

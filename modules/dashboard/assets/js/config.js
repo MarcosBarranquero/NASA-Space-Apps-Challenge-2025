@@ -13,10 +13,10 @@ window.SPACECRAFTER_CONFIG = {
 
   // Rutas base
   paths: {
-    base: '/modules/dashboard/',
-    habitat: '/modules/habitat/',
-    assets: '/modules/dashboard/assets/',
-    data: '/modules/dashboard/_data/'
+    base: (window.APP_BASE || '') + '/modules/dashboard/',
+    habitat: (window.APP_BASE || '') + '/modules/habitat/',
+    assets: (window.APP_BASE || '') + '/modules/dashboard/assets/',
+    data: (window.APP_BASE || '') + '/modules/dashboard/_data/'
   },
 
   // Configuración de la aplicación
@@ -113,7 +113,7 @@ window.SPACECRAFTER_CONFIG = {
   external: {
     nasaStandards: 'https://standards.nasa.gov/',
     esaEcss: 'https://ecss.nl/',
-    documentation: '/modules/dashboard/README.md',
+    documentation: (window.APP_BASE || '') + '/modules/dashboard/README.md',
     repository: '#'
   },
 

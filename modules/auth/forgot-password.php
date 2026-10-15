@@ -1,4 +1,4 @@
-<?php
+<?php require_once __DIR__ . '/../../app/base.php';
 // modules/auth/forgot-password.php — Recuperar contraseña (diseño solamente)
 
 // Este archivo es solo diseño, no tiene funcionalidad real
